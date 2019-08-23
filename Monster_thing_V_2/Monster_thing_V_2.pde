@@ -3,7 +3,7 @@ float y = 150;
 float ym = 2;
 float BSize = 100;
 float a = 0.0;
-float s = 2;
+float s = 1;
 
 void setup(){
   size(1920, 1080);
@@ -20,7 +20,7 @@ void draw(){
   background(200);
   y = y+1;
   x = x+1;
-  s = s + 0.02;
+  s = s + 0.021;
   
   scale(s);
   ellipse(x, y+sin(frameCount), BSize, BSize);
